@@ -9,38 +9,77 @@
   },
 
   "display": {
-    "separator": ": ",
-    "brightColor": true
-  },
-
-  "general": {
-    "thread": true,
-    "detectVersion": true
+    "separator": ": "
   },
 
   "modules": [
-    "title",
-    "separator",
+  {
+    "type": "title",
+    "key": "  "
+  },
+  "separator",
 
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
+  {
+    "type": "os",
+    "key": "  "
+  },
+  {
+    "type": "host",
+    "key": "󰌢 "
+  },
+  {
+    "type": "kernel",
+    "key": "  "
+  },
+  {
+    "type": "uptime",
+    "key": " 󰔟 "
+  },
+  {
+    "type": "packages",
+    "key": " 󰏖 "
+  },
 
-    "de",
-    "wm",
-    "terminal",
+  {
+    "type": "shell",
+    "key": " 󰆍 "
+  },
+  {
+    "type": "terminal",
+    "key": "  "
+  },
 
-    "cpu",
-    "gpu",
-    "memory",
-    "disk",
+  {
+    "type": "de",
+    "key": " 󰧨 "
+  },
+  {
+    "type": "wm",
+    "key": " 󰖯 "
+  },
 
-    "battery",
+  {
+    "type": "cpu",
+    "key": " 󰍛 "
+  },
+  {
+    "type": "gpu",
+    "key": " 󰢮 "
+  },
+  {
+    "type": "memory",
+    "key": " 󰘚 "
+  },
+  {
+    "type": "disk",
+    "key": " 󰋊 "
+  },
+  {
+    "type": "battery",
+    "key": " 󰁹 "
+  },
 
-    "break",
-    "colors"
-  ]
+  "break",
+  "colors"
+]
 }
