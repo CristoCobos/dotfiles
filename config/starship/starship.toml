@@ -1,0 +1,45 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# ─────────────────────────────────────────────
+# General
+# ─────────────────────────────────────────────
+
+add_newline = true
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$character"""
+
+# ─────────────────────────────────────────────
+# Directory
+# ─────────────────────────────────────────────
+
+[directory]
+style = "bold cyan"
+truncation_length = 3
+truncate_to_repo = true
+format = "[$path]($style) "
+
+# ─────────────────────────────────────────────
+# Git
+# ─────────────────────────────────────────────
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold yellow"
+format = "([$all_status$ahead_behind]($style)) "
+
+# ─────────────────────────────────────────────
+# Prompt
+# ─────────────────────────────────────────────
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold purple)"
