@@ -1,0 +1,9 @@
+[user]
+	name = CristoCobos
+	email = cristotristan2003@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[color]
+	ui = auto
