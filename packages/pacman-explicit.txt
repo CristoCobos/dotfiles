@@ -48,8 +48,8 @@ eos-quickstart
 eos-rankmirrors
 eos-settings-plasma
 ethtool
-exfatprogs
 ex-vi-compat
+exfatprogs
 eza
 f2fs-tools
 fastfetch
@@ -61,11 +61,12 @@ fish
 fwupd
 git
 glances
+google-chrome
 gst-libav
 gst-plugin-pipewire
+gst-plugin-va
 gst-plugins-bad
 gst-plugins-ugly
-gst-plugin-va
 gwenview
 haruna
 haveged
@@ -82,9 +83,9 @@ jfsutils
 kate
 kcalc
 kde-cli-tools
+kde-gtk-config
 kdeconnect
 kdegraphics-thumbnailers
-kde-gtk-config
 kdenetwork-filesharing
 kdeplasma-addons
 kernel-install-for-dracut
@@ -157,8 +158,8 @@ plasma-workspace
 plasma-x11-session
 plocate
 poppler-glib
-powerdevil
 power-profiles-daemon
+powerdevil
 print-manager
 python
 python-defusedxml
@@ -170,9 +171,9 @@ reflector
 reflector-simple
 rsync
 rtkit
+s-nail
 sg3_utils
 smartmontools
-s-nail
 sof-firmware
 spectacle
 starship
