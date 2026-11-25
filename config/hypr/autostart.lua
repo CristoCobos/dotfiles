@@ -1,0 +1,2 @@
+-- Applications and services started with Hyprland
+-- Autostart configuration will be added later.

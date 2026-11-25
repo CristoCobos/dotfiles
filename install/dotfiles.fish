@@ -8,6 +8,7 @@ set -l DOTFILES_DIR (dirname "$SCRIPT_DIR")
 # Configuraciones administradas por este instalador.
 set -l CONFIGS \
     kitty \
+    hypr \
     fish/config.fish \
     fastfetch/config.jsonc \
     starship.toml \
@@ -58,6 +59,9 @@ function get_config_paths
         case gitconfig
             set -g CONFIG_SOURCE "$dotfiles_dir/config/git/config"
             set -g CONFIG_TARGET "$HOME/.gitconfig"
+        case hypr
+            set -g CONFIG_SOURCE "$dotfiles_dir/config/hypr"
+            set -g CONFIG_TARGET "$HOME/.config/hypr"
     end
 end
 
