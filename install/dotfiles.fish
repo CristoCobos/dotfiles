@@ -10,6 +10,7 @@ set -l CONFIGS \
     kitty \
     hypr \
     waybar \
+    swaync \
     fish/config.fish \
     fastfetch/config.jsonc \
     starship.toml \
@@ -66,6 +67,9 @@ function get_config_paths
         case waybar
             set -g CONFIG_SOURCE "$dotfiles_dir/config/waybar"
             set -g CONFIG_TARGET "$HOME/.config/waybar"
+        case swaync
+            set -g CONFIG_SOURCE "$dotfiles_dir/config/swaync"
+            set -g CONFIG_TARGET "$HOME/.config/swaync"
     end
 end
 
