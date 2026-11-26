@@ -9,6 +9,7 @@ set -l DOTFILES_DIR (dirname "$SCRIPT_DIR")
 set -l CONFIGS \
     kitty \
     hypr \
+    waybar \
     fish/config.fish \
     fastfetch/config.jsonc \
     starship.toml \
@@ -62,6 +63,9 @@ function get_config_paths
         case hypr
             set -g CONFIG_SOURCE "$dotfiles_dir/config/hypr"
             set -g CONFIG_TARGET "$HOME/.config/hypr"
+        case waybar
+            set -g CONFIG_SOURCE "$dotfiles_dir/config/waybar"
+            set -g CONFIG_TARGET "$HOME/.config/waybar"
     end
 end
 

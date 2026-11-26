@@ -1,2 +1,6 @@
 -- Applications and services started with Hyprland
--- Autostart configuration will be added later.
+
+hl.on("hyprland.start", function()
+    -- Status bar
+    hl.exec_cmd("waybar")
+end)

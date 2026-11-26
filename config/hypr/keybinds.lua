@@ -10,3 +10,6 @@ hl.bind("SUPER + SHIFT + Q", hl.dsp.window.close())
 
 -- Exit Hyprland
 hl.bind("SUPER + SHIFT + M", hl.dsp.exit())
+
+-- Open application launcher
+hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show drun"))
