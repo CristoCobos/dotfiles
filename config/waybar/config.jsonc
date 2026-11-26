@@ -16,6 +16,7 @@
     "modules-right": [
         "cpu",
         "memory",
+        "backlight",
         "network",
         "pulseaudio",
         "battery",
@@ -49,17 +50,25 @@
         "tooltip": false
     },
 
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "BRI {percent}%",
+        "tooltip": true
+    },
+
     "network": {
         "format-wifi": "WIFI {essid} {signalStrength}%",
         "format-ethernet": "ETH {ipaddr}",
         "format-disconnected": "NET OFF",
-        "tooltip-format": "{ifname}: {ipaddr}"
+        "tooltip-format": "{ifname}: {ipaddr}",
+        "on-click": "kitty -e nmtui"
     },
 
     "pulseaudio": {
         "format": "VOL {volume}%",
         "format-muted": "MUTE",
-        "tooltip": true
+        "tooltip": true,
+        "on-click": "pavucontrol"
     },
 
     "battery": {
