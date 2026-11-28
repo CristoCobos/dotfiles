@@ -28,3 +28,14 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ to
 -- Brightness controls
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl -d intel_backlight set +5%"))
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -d intel_backlight set 5%-"))
+
+-- Scratchpad
+-- Move active window to the special workspace
+hl.bind("SUPER + H",
+        hl.dsp.window.move({ workspace = "special:scratchpad" })
+)
+
+-- Toggle scratchpad visibility
+hl.bind("SUPER + SHIFT + H",
+        hl.dsp.workspace.toggle_special("scratchpad")
+)
